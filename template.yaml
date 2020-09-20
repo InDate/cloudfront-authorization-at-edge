@@ -322,6 +322,8 @@ Resources:
       UserPoolName: !Ref AWS::StackName
       UsernameAttributes:
         - email
+      AutoVerifiedAttributes:
+        - email
 
   User:
     Type: AWS::Cognito::UserPoolUser
